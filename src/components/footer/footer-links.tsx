@@ -32,7 +32,7 @@ export const FooterLinks: FC = () => {
           Newcastle: 0191 249 9292 <br /> Birmingham: 0121 716 2556
         </span>
       </div>
-      <div className={`${FOOTER_SUBTITLES_WRAPPER} gap-4`}>
+      <div className={`${FOOTER_SUBTITLES_WRAPPER} gap-4 pl-12`}>
         <span className={TITLE}>Links</span>
         {LINKS_SUBTITLES.map((linkItem, index) => (
           <span key={index} className={SUBTITLE}>

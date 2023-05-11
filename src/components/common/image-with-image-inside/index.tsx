@@ -7,7 +7,7 @@ type ImageWithInsideImageProps = {
   secondaryImage: StaticImageData;
 };
 
-export const ImageWithInsideImage: FC<ImageWithInsideImageProps> = ({
+export const ImageWithImageInside: FC<ImageWithInsideImageProps> = ({
   primaryImage,
   secondaryImage,
 }) => {

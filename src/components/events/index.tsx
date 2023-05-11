@@ -10,7 +10,7 @@ import events_img_5 from "@/images/events_img_5.jpg";
 
 export const Events: FC = () => {
   return (
-    <div className="mt-40 w-full h-full px-[168px] grid grid-cols-3-480px gap-8 ">
+    <div className="mt-40 w-full h-full px-[60px] grid grid-cols-3 gap-8 ">
       <div className="h-full w-full flex flex-col gap-y-8">
         <NewsAndEventsBlock />
         <ImageWithTextInside src={events_img_1}>

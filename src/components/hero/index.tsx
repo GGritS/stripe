@@ -19,6 +19,7 @@ export const Hero: FC<HeroProps> = ({ onClick }) => {
     <div className="flex w-">
       <div className="w-full relative">
         <div className="absolute bg-imagesBG  z-25 mix-blend-hard-light top-0 left-0 opacity-40  w-full h-full"></div>
+
         <Image src={logo} alt="logo" className="absolute left-16 top-8 z-40" />
         <div className="absolute z-40 font-roboto leading-[72px] text-white text-[56px] w-full h-full flex flex-col items-center justify-center">
           <span>Bespoke property developer</span>

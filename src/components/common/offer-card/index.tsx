@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { ImageWithInsideImage } from "../image-with-inside-image";
+import { ImageWithImageInside } from "../image-with-image-inside";
 import { StaticImageData } from "next/image";
 import cn from "classnames";
 
@@ -24,11 +24,12 @@ export const OfferCard: FC<OfferCardProps> = ({
 }) => {
   return (
     <div
-      className={cn("h-[1320px]", {
+      className={cn(`max-h-[1320px] h-fit lg:`, {
         "ml-20": !fullWidth && imageBottom,
-        "mr-20": !fullWidth && !imageBottom,
+        "mr-16": !fullWidth && !imageBottom,
+        "pt-[120px]": imageBottom,
       })}
-      style={{ width: fullWidth ? "1032px" : "624px" }}
+      // style={{ width: fullWidth ? "1032px" : "624px" }}
     >
       <div
         className={cn("flex justify-end  h-full", {
@@ -61,7 +62,7 @@ export const OfferCard: FC<OfferCardProps> = ({
             Find out more
           </button>
         </div>
-        <ImageWithInsideImage
+        <ImageWithImageInside
           primaryImage={primaryImage}
           secondaryImage={secondaryImage}
         />

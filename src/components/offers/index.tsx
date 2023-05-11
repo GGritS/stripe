@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { ImageWithInsideImage } from "../common/image-with-inside-image";
 import { OfferCard } from "../common/offer-card";
 import image1 from "@/images/image_1.jpg";
 import image1_1 from "@/images/image_1_1.png";
@@ -56,7 +55,7 @@ export const Offers: FC = () => {
     <div className="w-full mt-10">
       {offers.map((offersLine, offersLineIndex) => (
         <div
-          className="w-full  flex justify-between mt-[120px] "
+          className="w-full  flex justify-between mt-[120px] gap-x-[60px]"
           key={offersLineIndex}
         >
           {offersLine.map((offer, index) => (
